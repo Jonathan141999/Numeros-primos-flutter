@@ -26,15 +26,22 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;        
-        if (_counter%_counter == 0) { // no es número primo
-            _counter=_counter+2; // sale del bucles
+  int _a = 2;
+  void _generatePrime() {
+    int cont = 0;
+    int num = 100;
+    for (var i = 1; i <= num; i++) {
+      if (num % i == 0) {
+        cont++;
+      }
     }
-    });
+    if (cont == 2) {
+      setState(() {
+        _a = num;
+      });
+    } else {
+      _generatePrime();
+    }
   }
   
   @override
@@ -51,15 +58,15 @@ class _MyHomePageState extends State<MyHomePage> {
               'Los números primos son:',
             ),
             Text(
-              '$_counter',
+              '$_a',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: _generatePrime,
+        tooltip: 'Numero',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
