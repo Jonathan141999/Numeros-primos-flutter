@@ -1,16 +1,11 @@
 # flutter_application_1
 
-A new Flutter project.
+Nombre: Jonathan Alquinga
 
-## Getting Started
+A continuación se presenta la parte visual para mostrar los numeros primos
+![image](https://user-images.githubusercontent.com/66144899/129463996-a46c125f-63e4-4f2a-b757-f021366b53ed.png)
 
-This project is a starting point for a Flutter application.
+Funcion de los números primos
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://user-images.githubusercontent.com/66144899/129464024-c82e11d8-c698-4808-b52b-c949a7a93b46.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
